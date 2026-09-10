@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>L'Ultimo Ingranaggio</title>
+<link rel="manifest" href="data:application/manifest+json;base64,eyJuYW1lIjogIkwnVWx0aW1vIEluZ3JhbmFnZ2lvIiwgInNob3J0X25hbWUiOiAiSW5ncmFuYWdnaW8iLCAic3RhcnRfdXJsIjogIi4iLCAiZGlzcGxheSI6ICJzdGFuZGFsb25lIiwgImJhY2tncm91bmRfY29sb3IiOiAiIzE3MTIyNSIsICJ0aGVtZV9jb2xvciI6ICIjMTcxMjI1IiwgIm9yaWVudGF0aW9uIjogInBvcnRyYWl0IiwgImljb25zIjogW3sic3JjIjogImRhdGE6aW1hZ2UvcG5nO2Jhc2U2NCxpVkJPUncwS0dnb0FBQUFOU1VoRVVnQUFBTFFBQUFDMENBSUFBQUN5cjVGbEFBQUZnMGxFUVZSNG5PMmR6WkVVT1JCR0JRRU83QVVEQ056Qmk3V0E4NTcyakFWNGdUOVl3bVVQMmhBZDA1MHoxVlhLLy9lT0JEOVM1dE9YbXU2dTV0Mm52NzRNZ0VlODkxNEF4QVU1UUFRNVFBUTVRQVE1UUFRNVFBUTVRQVE1UUFRNVFBUTVRQVE1UUFRNVFBUTVRQVE1UUFRNVFBUTVRQVE1UUFRNVFBUTVRQVE1UUFRNVFBUTVRQVE1UUFRNVFBUTVRQVE1UUFRNVFBUTUvdkR6MjBmdkpjUUNPZjVubW9FZnQ3empLZnVIUW56OS90dCtKZEhvbmh4U1ZCQWhvN2tjcnh1QUgzM0h5dkhldHgweEhlVTRFUWs5L1dnM1ZzNE5pNTRqcGxkeVhPOXhxd2hwbEJ4YlRuK3JDR21SSE5zNzJpUS82c3VoZDliTEsxSjhyS2hPZ2ZJanBySWNCczJyN1VmTnNXTGZzNUlqcG1CeXVKem1raEdTT0RteTlDTnZxQ1NRSTRzRXp4SmZta0J5VkpYZ1dlSklVL0RPQWJ0QURoQkJEaEQ1NEwwQVR3NU85N2FYb1NnWFVyTUdYTHp1MmF3enlKMjBTM0xzS3ZmNmV6ckVTWEU1OUk1Z0Iwdkt5bUdXelBNZktxbElRVGxjQm5aSlJhcjlLT3Q3bFF0eWtkeEZuZVFJMHBoS0VWSWtPWUtZc1lpMm5uT0VrT1BpT1l2WmlTdXJDaEk4dWNkS1RDMFcyVWRNaU9RNFIzQXpGbG5XZVU5V09YSlZQTmRxRnlubHlGanJqR3RPS1FmWWtFK09qRWR3a203bHllUklWOThYNUZxL3Z4emR2bUVuMFNlTS9PV0FzS1NSbzBac1RMTHNKWWNjV2FwNW5CUTdjcFlqd21RTmkzdHhFaVJIaWtOMmdpUDc4dlhEVXc3M2t3R3Y0eWJIUVRPcXhzWWtlSGo0eUVGbVBJVlh1WEovbm1NWG4vLzUrLzRYZi8zN3czNGxFaisvZmJRUFVZY24zdUs4SlByUWlYdTBMWWxUa0JkWWo1VTRBK1dnR1UvOXptS1lqcFVnWnB4bzl2d2o3b1BHZUxqRWZaMURxUXBYWWtBcFFwN2FxZVVCczVNalFteGM3MjZFRVdOV1NTTTVJcGhSQ1p0NldzZ1J4SXhkaHo1Q2VOZ1E5TTZ4L2NLeHQ2UGIvVGl4WDRNanB5NUhrTmdvaVhadGRlWEFERzFVSzZ3b1J4d3pORzRKY1c0ZWVuVU9ldWVBQ0dqSkVTYzJPcUJVYlJVNU1NTWVqWnFyeUZIN0V6b3gwYWk1MWxqQkQwdVVxczJGTkQxNjUxQlJqampob2ZGV3UvdmI5d2JvSmtjY1A2cWlXbUgxc1lJZmVtalgxdUxPRWVGZHBiMVRZUHRNT2JGZmcxUFg2RUs2cTZNUmJoczJlV3drQjhObEkyYkZ0RXVPQ0g1Y1AvUVJZc01NMDdFUzRaTzBWN3FyWk1aVE83VThZeDJmZUpzOWZ1bzk5eUNCVWZ5aHBnakRaWEs4M3ozTkdGNy9BV0MwQndBZG41V04vRzBEUG1QbDYvZmZvZDdXRDVJTkVsNXg2L1k2UjV6NUFoTFJYd1FMRlREYk9iSTd4MVBrS1FmaDhTYStKWEpPanVEZmU2VEttL3R5UHp6Unh3bzRra09PZXVHUllrYzU1QmhKcW5tUUxIdnhsOE45c3NZa1Fsbjg1VGhPbGdQM09vbDJrVW1Pa2FxeUQ4bTEvbVJ5akd6MXZTWGR5dlBKQVdha2xDUGRFUnc1MTV4U2pwR3QxcmxXdThncXg4aFQ4U3pydk1mbnd6NzNYS2xnaEpjRUhuSjZVMEYybERnNUZqR1Bac3hWUFVVRk9VYThUa1JienpucWZQcDg5c005a0d0b01TbVNIQXZmM2xReVkxUktqb1ZMaEJUVFlsSlFqb21aSWlXMW1KU1ZZN0k2dDkyU3drNHNvcnpPTWF6S2ZkRVNnMFc2MzZrWHhaUGpudHZ1SG14RGg1QjRTRHM1Ym1uYjlZTlUrMUVXTm9JY0lCTG9RaXBSTmZ6alhEd2xFc2doa1VXYStCSklKSlpEd2t1YXZCSklGTHh6dURTcG5obWpaSElzekNLa3BCbWp0aHhEMzQrcVdrd0tqcFZiVkp0WDI0eFJYbzZoMXNMeVpvenlZK1dXalNPbWd4bWpRM0lzZG5XMGlSbWpWWEpNU2o0RG9VU2o1SmljYm5BM00wYkQ1RmlFL1RyNk9MUkxqc1h4ZnZjMFkzU1dZeHpyZWxzelJuTTV4bHU5NzJ6RzZIem5lTUdMSzBoekxTYmRrMk54YXdObVRKRGpEOU1KekZnd1ZrQ0U1QUFSNUFBUjVBQVI1QUFSNUFBUjVBQVI1QUFSNUFBUjVBQVI1QUFSNUFBUjVBQVI1QUFSNUFBUjVBQVI1QUFSNUFBUjVBQVI1QUFSNUFBUjVBQVI1QUFSNUFBUjVBQVI1QUFSNUFDUi93RE53c1VUaUlySUp3QUFBQUJKUlU1RXJrSmdnZz09IiwgInNpemVzIjogIjE4MHgxODAiLCAidHlwZSI6ICJpbWFnZS9wbmcifV19">
+<link rel="icon" type="image/png" sizes="180x180" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAFg0lEQVR4nO2dzZEUORBGBQEO7AUDCNzBi7WA8572jAV4gT9YwmUP2hAd050z1VXK//eOBD9S5tOXmu6u5t2nv74MgEe8914AxAU5QAQ5QAQ5QAQ5QAQ5QAQ5QAQ5QAQ5QAQ5QAQ5QAQ5QAQ5QAQ5QAQ5QAQ5QAQ5QAQ5QAQ5QAQ5QAQ5QAQ5QAQ5QAQ5QAQ5QAQ5QAQ5QAQ5/vDz20fvJcQCOf5nmoEft7zjKfuHQnz9/tt+JdHonhxSVBAho7kcrxuAH33HyvHetx0xHeU4EQk9/Wg3Vs4Ni54jpldyXO9xqwhplBxbTn+rCGmRHNs72iQ/6suhd9bLK1J8rKhOgfIjprIcBs2r7UfNsWLfs5IjpmByuJzmkhGSODmy9CNvqCSQI4sEzxJfmkByVJXgWeJIU/DOAbtADhBBDhD54L0ATw5O97aXoSgXUrMGXLzu2awzyJ20S3LsKvf6ezrESXE59I5gB0vKymGWzPMfKqlIQTlcBnZJRar9KOt7lQtykdxFneQI0phKEVIkOYKYsYi2nnOEkOPiOYvZiSurChI8ucdKTC0W2UdMiOQ4R3AzFlnWeU9WOXJVPNdqFynlyFjrjGtOKQfYkE+OjEdwkm7lyeRIV98X5Fq/vxzdvmEn0SeM/OWAsKSRo0ZsTLLsJYccWap5nBQ7cpYjwmQNi3txEiRHikN2giP78vXDUw73kwGv4ybHQTOqxsYkeHj4yEFmPIVXuXJ/nmMXn//5+/4Xf/37w34lEj+/fbQPUYcn3uK8JPrQiXu0LYlTkBdYj5U4A+WgGU/9zmKYjpUgZpxo9vwj7oPGeLjEfZ1DqQpXYkApQp7aqeUBs5MjQmxc726EEWNWSSM5IphRCZt6WsgRxIxdhz5CeNgQ9M6x/cKxt6Pb/TixX4Mjpy5HkNgoiXZtdeXADG1UK6woRxwzNG4JcW4eenUOeueACGjJESc2OqBUbRU5MMMejZqryFH7Ezox0ai51ljBD0uUqs2FND1651BRjjjhofFWu/vb9wboJkccP6qiWmH1sYIfemjX1uLOEeFdpb1TYPtMObFfg1PX6EK6q6MRbhs2eWwkB8NlI2bFtEuOCH5cP/QRYsMM07ES4ZO0V7qrZMZTO7U8Yx2feJs9fuo99yCBUfyhpgjDZXK83z3NGF7/AWC0BwAdn5WN/G0DPmPl6/ffod7WD5INEl5x6/Y6R5z5AhLRXwQLFTDbObI7x1PkKQfh8Sa+JXJOjuDfe6TKm/tyPzzRxwo4kkOOeuGRYkc55BhJqnmQLHvxl8N9ssYkQln85ThOlgP3Ool2kUmOkaqyD8m1/mRyjGz1vSXdyvPJAWaklCPdERw515xSjpGt1rlWu8gqx8hT8SzrvMfnwz73XKlghJcEHnJ6U0F2lDg5FjGPZsxVPUUFOUa8TkRbzznqfPp89sM9kGtoMSmSHAvf3lQyY1RKjoVLhBTTYlJQjomZIiW1mJSVY7I6t92Swk4sorzOMazKfdESg0W636kXxZPjntvuHmxDh5B4SDs5bmnb9YNU+1EWNoIcIBLoQipRNfzjXDwlEsghkUWa+BJIJJZDwkuavBJIFLxzuDSpnhmjZHIszCKkpBmjthxD34+qWkwKjpVbVJtX24xRXo6h1sLyZozyY+WWjSOmgxmjQ3IsdnW0iRmjVXJMSj4DoUSj5JicbnA3M0bD5FiE/Tr6OLRLjsXxfvc0Y3SWYxzrelszRnM5xlu972zG6HzneMGLK0hzLSbdk2NxawNmTJDjD9MJzFgwVkCE5AAR5AAR5AAR5AAR5AAR5AAR5AAR5AAR5AAR5AAR5AAR5AAR5AAR5AAR5AAR5AAR5AAR5AAR5AAR5AAR5AAR5AAR5AAR5AAR5AAR5ACR/wDNwsUTiIrIJwAAAABJRU5ErkJggg==">
+<link rel="apple-touch-icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAALQAAAC0CAIAAACyr5FlAAAFg0lEQVR4nO2dzZEUORBGBQEO7AUDCNzBi7WA8572jAV4gT9YwmUP2hAd050z1VXK//eOBD9S5tOXmu6u5t2nv74MgEe8914AxAU5QAQ5QAQ5QAQ5QAQ5QAQ5QAQ5QAQ5QAQ5QAQ5QAQ5QAQ5QAQ5QAQ5QAQ5QAQ5QAQ5QAQ5QAQ5QAQ5QAQ5QAQ5QAQ5QAQ5QAQ5QAQ5QAQ5/vDz20fvJcQCOf5nmoEft7zjKfuHQnz9/tt+JdHonhxSVBAho7kcrxuAH33HyvHetx0xHeU4EQk9/Wg3Vs4Ni54jpldyXO9xqwhplBxbTn+rCGmRHNs72iQ/6suhd9bLK1J8rKhOgfIjprIcBs2r7UfNsWLfs5IjpmByuJzmkhGSODmy9CNvqCSQI4sEzxJfmkByVJXgWeJIU/DOAbtADhBBDhD54L0ATw5O97aXoSgXUrMGXLzu2awzyJ20S3LsKvf6ezrESXE59I5gB0vKymGWzPMfKqlIQTlcBnZJRar9KOt7lQtykdxFneQI0phKEVIkOYKYsYi2nnOEkOPiOYvZiSurChI8ucdKTC0W2UdMiOQ4R3AzFlnWeU9WOXJVPNdqFynlyFjrjGtOKQfYkE+OjEdwkm7lyeRIV98X5Fq/vxzdvmEn0SeM/OWAsKSRo0ZsTLLsJYccWap5nBQ7cpYjwmQNi3txEiRHikN2giP78vXDUw73kwGv4ybHQTOqxsYkeHj4yEFmPIVXuXJ/nmMXn//5+/4Xf/37w34lEj+/fbQPUYcn3uK8JPrQiXu0LYlTkBdYj5U4A+WgGU/9zmKYjpUgZpxo9vwj7oPGeLjEfZ1DqQpXYkApQp7aqeUBs5MjQmxc726EEWNWSSM5IphRCZt6WsgRxIxdhz5CeNgQ9M6x/cKxt6Pb/TixX4Mjpy5HkNgoiXZtdeXADG1UK6woRxwzNG4JcW4eenUOeueACGjJESc2OqBUbRU5MMMejZqryFH7Ezox0ai51ljBD0uUqs2FND1651BRjjjhofFWu/vb9wboJkccP6qiWmH1sYIfemjX1uLOEeFdpb1TYPtMObFfg1PX6EK6q6MRbhs2eWwkB8NlI2bFtEuOCH5cP/QRYsMM07ES4ZO0V7qrZMZTO7U8Yx2feJs9fuo99yCBUfyhpgjDZXK83z3NGF7/AWC0BwAdn5WN/G0DPmPl6/ffod7WD5INEl5x6/Y6R5z5AhLRXwQLFTDbObI7x1PkKQfh8Sa+JXJOjuDfe6TKm/tyPzzRxwo4kkOOeuGRYkc55BhJqnmQLHvxl8N9ssYkQln85ThOlgP3Ool2kUmOkaqyD8m1/mRyjGz1vSXdyvPJAWaklCPdERw515xSjpGt1rlWu8gqx8hT8SzrvMfnwz73XKlghJcEHnJ6U0F2lDg5FjGPZsxVPUUFOUa8TkRbzznqfPp89sM9kGtoMSmSHAvf3lQyY1RKjoVLhBTTYlJQjomZIiW1mJSVY7I6t92Swk4sorzOMazKfdESg0W636kXxZPjntvuHmxDh5B4SDs5bmnb9YNU+1EWNoIcIBLoQipRNfzjXDwlEsghkUWa+BJIJJZDwkuavBJIFLxzuDSpnhmjZHIszCKkpBmjthxD34+qWkwKjpVbVJtX24xRXo6h1sLyZozyY+WWjSOmgxmjQ3IsdnW0iRmjVXJMSj4DoUSj5JicbnA3M0bD5FiE/Tr6OLRLjsXxfvc0Y3SWYxzrelszRnM5xlu972zG6HzneMGLK0hzLSbdk2NxawNmTJDjD9MJzFgwVkCE5AAR5AAR5AAR5AAR5AAR5AAR5AAR5AAR5AAR5AAR5AAR5AAR5AAR5AAR5AAR5AAR5AAR5AAR5AAR5AAR5AAR5AAR5AAR5AAR5AAR5ACR/wDNwsUTiIrIJwAAAABJRU5ErkJggg==">
+<meta name="theme-color" content="#171225">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="Ingranaggio">
+<style>
+  :root{
+    --notte: #171225;
+    --notte2: #221b38;
+    --ottone: #c9852a;
+    --ottone-chiaro: #e8b869;
+    --ruggine: #a4462e;
+    --pergamena: #ede2c8;
+    --teal: #3a8f8a;
+  }
+  *{ box-sizing:border-box; -webkit-tap-highlight-color: transparent; }
+  html,body{
+    margin:0; padding:0; height:100%; overflow:hidden;
+    background: var(--notte);
+    font-family: 'Iowan Old Style', 'Palatino Linotype', Georgia, serif;
+    color: var(--pergamena);
+    touch-action: none;
+    user-select: none;
+  }
+  #stage{
+    position:relative;
+    width:100%; height:100vh;
+    display:flex; align-items:center; justify-content:center;
+    background:
+      radial-gradient(ellipse at 50% -10%, #2c2247 0%, transparent 60%),
+      linear-gradient(180deg, var(--notte) 0%, #0e0a18 100%);
+  }
+  #frame{
+    position:relative;
+    width:100%; max-width:520px; height:100%; max-height:900px;
+    background: var(--notte2);
+    border-left: 1px solid #3a2f57;
+    border-right: 1px solid #3a2f57;
+    overflow:hidden;
+  }
+  canvas{
+    display:block;
+    width:100%; height:100%;
+    background: linear-gradient(180deg, #1c1730 0%, #120e20 70%, #0a0812 100%);
+  }
+
+  /* --- Schermate narrative --- */
+  .panel{
+    position:absolute; inset:0;
+    display:flex; flex-direction:column; align-items:center; justify-content:center;
+    padding: 8% 8%;
+    background: linear-gradient(180deg, rgba(14,10,24,.97), rgba(23,18,37,.99));
+    text-align:center;
+    z-index:20;
+  }
+  .panel.hidden{ display:none; }
+  .gear-mark{
+    width:56px; height:56px; margin-bottom:18px;
+    border:2px solid var(--ottone);
+    border-radius:50%;
+    position:relative;
+    animation: spin 12s linear infinite;
+  }
+  .gear-mark::before, .gear-mark::after{
+    content:''; position:absolute; background:var(--ottone);
+  }
+  .gear-mark::before{ width:2px; height:70px; top:-9px; left:27px; }
+  .gear-mark::after{ width:70px; height:2px; left:-9px; top:27px; }
+  @keyframes spin{ to{ transform: rotate(360deg); } }
+
+  .eyebrow{
+    letter-spacing:.04em; font-size:13px; color: var(--teal);
+    margin-bottom:10px; font-style:italic;
+  }
+  h1{
+    font-size: clamp(26px, 7vw, 38px);
+    margin: 0 0 18px 0;
+    color: var(--ottone-chiaro);
+    font-weight: 600;
+    line-height:1.15;
+  }
+  .story-text{
+    font-size: 16px;
+    line-height: 1.65;
+    color: var(--pergamena);
+    max-width: 40ch;
+    margin: 0 0 26px 0;
+    opacity:.92;
+  }
+  .story-text em{ color: var(--ottone-chiaro); font-style:normal; }
+  button.action{
+    font-family: inherit;
+    font-size: 16px;
+    padding: 13px 34px;
+    background: var(--ottone);
+    color: #221708;
+    border: none;
+    border-radius: 3px;
+    cursor:pointer;
+    letter-spacing:.02em;
+    box-shadow: 0 3px 0 #8a5c17;
+  }
+  button.action:active{ transform: translateY(2px); box-shadow: 0 1px 0 #8a5c17; }
+  .small-note{
+    margin-top:16px; font-size:12.5px; color:#8b83a6; font-style:italic;
+  }
+
+  /* --- HUD --- */
+  #hud{
+    position:absolute; top:0; left:0; right:0;
+    display:flex; align-items:center; justify-content:space-between;
+    padding: 14px 16px;
+    z-index:10;
+    pointer-events:none;
+  }
+  #crystals{
+    display:flex; align-items:center; gap:6px;
+    background: rgba(10,8,18,.55);
+    border:1px solid rgba(201,133,42,.4);
+    border-radius: 20px;
+    padding: 6px 14px 6px 10px;
+    font-size:14px;
+  }
+  .crystal-icon{
+    width:12px; height:12px;
+    background: var(--teal);
+    transform: rotate(45deg);
+    box-shadow: 0 0 6px var(--teal);
+  }
+  #timer{
+    background: rgba(10,8,18,.55);
+    border:1px solid rgba(201,133,42,.4);
+    border-radius: 20px;
+    padding: 6px 14px;
+    font-size:14px;
+    font-variant-numeric: tabular-nums;
+  }
+
+  /* --- Controlli touch --- */
+  #controls{
+    position:absolute; bottom:0; left:0; right:0;
+    display:flex; align-items:flex-end; justify-content:space-between;
+    padding: 0 18px 20px 18px;
+    z-index:10;
+  }
+  .pad{ display:flex; gap:10px; }
+  .ctrl-btn{
+    width:58px; height:58px;
+    border-radius: 50%;
+    border: 1px solid rgba(201,133,42,.5);
+    background: rgba(23,18,37,.55);
+    color: var(--ottone-chiaro);
+    font-size: 22px;
+    display:flex; align-items:center; justify-content:center;
+    backdrop-filter: blur(2px);
+  }
+  .ctrl-btn:active{ background: rgba(201,133,42,.35); }
+  #jumpBtn{
+    width:72px; height:72px;
+    font-size:13px;
+    letter-spacing:.03em;
+  }
+  @media (min-width: 700px){
+    #controls{ display:none; }
+  }
+</style>
+</head>
+<body>
+<div id="stage">
+<div id="frame">
+
+  <canvas id="game" width="520" height="900"></canvas>
+
+  <div id="hud" style="display:none;">
+    <div id="crystals"><span class="crystal-icon"></span><span id="crystalCount">0 / 5</span></div>
+    <div id="timer">02:30</div>
+  </div>
+
+  <div id="controls" style="display:none;">
+    <div class="pad">
+      <div class="ctrl-btn" id="leftBtn">◀</div>
+      <div class="ctrl-btn" id="rightBtn">▶</div>
+    </div>
+    <div class="ctrl-btn" id="jumpBtn">SALTA</div>
+  </div>
+
+  <!-- Schermata 1: Titolo / Storia -->
+  <div class="panel" id="panelIntro">
+    <div class="gear-mark"></div>
+    <div class="eyebrow">un racconto meccanico</div>
+    <h1>L'Ultimo Ingranaggio</h1>
+    <p class="story-text">
+      Nella Torre di Orologeria, il <em>Grande Ingranaggio</em> si è fermato.
+      Con lui, si è fermato anche il tempo della città sottostante.<br><br>
+      Tu sei <em>Bit</em>, il piccolo automa incaricato di custodirlo.
+      Nelle tue giunture di rame scorre l'ultima scintilla d'energia rimasta nella torre:
+      basta per una sola scalata.
+    </p>
+    <button class="action" id="btnStart">Inizia la scalata</button>
+    <p class="small-note">← → per muoverti, ⎵ o tocca per saltare</p>
+  </div>
+
+  <!-- Schermata 2: Obiettivo -->
+  <div class="panel hidden" id="panelGoal">
+    <div class="eyebrow">capitolo primo</div>
+    <h1>I Cristalli di Tempo</h1>
+    <p class="story-text">
+      Cinque <em>cristalli di tempo</em> sono rotolati via dal meccanismo centrale,
+      incastrati tra le travi della torre.<br><br>
+      Raccoglili tutti e raggiungi il <em>Grande Ingranaggio</em> in cima,
+      prima che gli Spiriti di Ruggine consumino ciò che resta della tua carica.
+      Se ti toccano, perderai energia preziosa.
+    </p>
+    <button class="action" id="btnPlay">Sali</button>
+  </div>
+
+  <!-- Schermata 3: Vittoria -->
+  <div class="panel hidden" id="panelWin">
+    <div class="gear-mark"></div>
+    <div class="eyebrow">epilogo</div>
+    <h1 id="winTitle">Il tempo riprende</h1>
+    <p class="story-text" id="winText"></p>
+    <button class="action" id="btnAgain">Scala di nuovo</button>
+  </div>
+
+  <!-- Schermata 4: Sconfitta -->
+  <div class="panel hidden" id="panelLose">
+    <div class="eyebrow">interruzione</div>
+    <h1>La scintilla si spegne</h1>
+    <p class="story-text" id="loseText">
+      Bit si ferma a metà torre. Il meccanismo tace ancora un po' più a lungo.
+      Ma un altro automa, da qualche parte nei sotterranei, sta già caricando le sue giunture...
+    </p>
+    <button class="action" id="btnRetry">Riprova la scalata</button>
+  </div>
+
+</div>
+</div>
+
+<script>
+(function(){
+  const canvas = document.getElementById('game');
+  const ctx = canvas.getContext('2d');
+
+  // --- Adatta il canvas al frame ---
+  const frame = document.getElementById('frame');
+  function resize(){
+    const r = frame.getBoundingClientRect();
+    canvas.width = r.width * devicePixelRatio;
+    canvas.height = r.height * devicePixelRatio;
+    canvas.style.width = r.width + 'px';
+    canvas.style.height = r.height + 'px';
+    ctx.setTransform(devicePixelRatio,0,0,devicePixelRatio,0,0);
+    W = r.width; H = r.height;
+  }
+  let W, H;
+  window.addEventListener('resize', resize);
+
+  // --- Stato di gioco ---
+  const GRAVITY = 0.36;
+  const MOVE_SPEED = 3.4;
+  const JUMP_FORCE = -13.8;
+  const WORLD_HEIGHT = 3600; // altezza totale della torre (scroll verticale)
+  const TIME_LIMIT = 150; // secondi
+
+  let state = 'intro'; // intro | goal | playing | win | lose
+  let camY = 0;
+  let timeLeft = TIME_LIMIT;
+  let lastTime = null;
+  let crystalsCollected = 0;
+
+  const player = { x: 0, y: 0, w: 26, h: 34, vx: 0, vy: 0, onGround:false, facing:1 };
+  const keys = { left:false, right:false, jump:false };
+
+  let platforms = [];
+  let crystals = [];
+  let enemies = [];
+  let goalY = 0;
+
+  function buildLevel(){
+    platforms = [];
+    crystals = [];
+    enemies = [];
+    crystalsCollected = 0;
+
+    // Piattaforma di partenza in basso
+    platforms.push({x:0, y: WORLD_HEIGHT - 40, w: 520, h: 40, kind:'floor'});
+
+    let y = WORLD_HEIGHT - 130;
+    const step = 85;
+    let side = 0;
+    const crystalIdxTargets = [1,3,5,7,9]; // ogni tanto una piattaforma porta un cristallo
+    let idx = 0;
+    while (y > 300) {
+      const w = 130 + Math.random()*60;
+      const x = side === 0 ? 20 + Math.random()*40 : 520 - w - 20 - Math.random()*40;
+      platforms.push({x, y, w, h:18, kind:'plat'});
+
+      if (crystalIdxTargets.includes(idx) && crystalsPlaced() < 5) {
+        crystals.push({x: x + w/2 - 8, y: y - 26, w:16, h:16, taken:false});
+      }
+
+      // Nemico ogni 3 piattaforme circa
+      if (idx % 3 === 2) {
+        enemies.push({
+          x: x, y: y - 24, w:20, h:20,
+          minX: x, maxX: x + w - 20,
+          speed: 1 + Math.random()*0.8, dir: 1
+        });
+      }
+
+      side = 1 - side;
+      y -= step;
+      idx++;
+    }
+
+    // Piattaforma finale (Grande Ingranaggio)
+    goalY = 220;
+    platforms.push({x: 160, y: goalY, w: 200, h: 22, kind:'goal'});
+
+    function crystalsPlaced(){ return crystals.length; }
+
+    player.x = 250; player.y = WORLD_HEIGHT - 130;
+    player.vx = 0; player.vy = 0;
+  }
+
+  function startGame(){
+    buildLevel();
+    timeLeft = TIME_LIMIT;
+    camY = 0;
+    state = 'playing';
+    document.getElementById('hud').style.display = 'flex';
+    document.getElementById('controls').style.display = 'flex';
+    updateHud();
+    lastTime = null;
+    requestAnimationFrame(loop);
+  }
+
+  function updateHud(){
+    document.getElementById('crystalCount').textContent = crystalsCollected + ' / 5';
+    const m = Math.floor(Math.max(0,timeLeft)/60).toString().padStart(2,'0');
+    const s = Math.floor(Math.max(0,timeLeft)%60).toString().padStart(2,'0');
+    document.getElementById('timer').textContent = m + ':' + s;
+  }
+
+  function showPanel(id){
+    document.querySelectorAll('.panel').forEach(p => p.classList.add('hidden'));
+    if (id) document.getElementById(id).classList.remove('hidden');
+  }
+
+  function endWin(){
+    state = 'win';
+    document.getElementById('hud').style.display = 'none';
+    document.getElementById('controls').style.display = 'none';
+    let text;
+    if (crystalsCollected >= 5) {
+      text = "Bit inserisce l'ultimo cristallo nel Grande Ingranaggio. I denti di rame tornano a mordersi, lenti, poi sicuri. In fondo alla torre, gli orologi della città ripartono tutti insieme, con un solo rintocco. Nessuno saprà mai il nome del piccolo automa che ha rimesso in moto il tempo.";
+    } else {
+      text = "Bit raggiunge il Grande Ingranaggio con " + crystalsCollected + " cristalli su 5. Il meccanismo si scuote, riparte a scatti, incerto. Il tempo della città torna, ma zoppica un po' — forse basterà un'altra scalata, un giorno, per farlo camminare dritto.";
+    }
+    document.getElementById('winText').textContent = text;
+    showPanel('panelWin');
+  }
+
+  function endLose(){
+    state = 'lose';
+    document.getElementById('hud').style.display = 'none';
+    document.getElementById('controls').style.display = 'none';
+    showPanel('panelLose');
+  }
+
+  function rectsOverlap(a,b){
+    return a.x < b.x+b.w && a.x+a.w > b.x && a.y < b.y+b.h && a.y+a.h > b.y;
+  }
+
+  function loop(ts){
+    if (state !== 'playing') return;
+    if (!lastTime) lastTime = ts;
+    const dt = Math.min(1/30, (ts-lastTime)/1000);
+    lastTime = ts;
+
+    timeLeft -= dt;
+    if (timeLeft <= 0) { updateHud(); endLose(); return; }
+
+    // Input orizzontale
+    player.vx = 0;
+    if (keys.left) { player.vx = -MOVE_SPEED; player.facing = -1; }
+    if (keys.right) { player.vx = MOVE_SPEED; player.facing = 1; }
+
+    if (keys.jump && player.onGround) {
+      player.vy = JUMP_FORCE;
+      player.onGround = false;
+    }
+
+    player.vy += GRAVITY;
+    if (player.vy > 14) player.vy = 14;
+
+    player.x += player.vx;
+    if (player.x < 0) player.x = 0;
+    if (player.x > 520 - player.w) player.x = 520 - player.w;
+
+    player.y += player.vy;
+
+    // Collisioni piattaforme (solo dall'alto, quando si cade)
+    player.onGround = false;
+    for (const p of platforms) {
+      if (player.vy >= 0 &&
+          player.x + player.w > p.x && player.x < p.x + p.w &&
+          player.y + player.h > p.y && player.y + player.h - player.vy <= p.y + 2) {
+        player.y = p.y - player.h;
+        player.vy = 0;
+        player.onGround = true;
+      }
+    }
+
+    // Caduta nel vuoto: game over immediato (torna a rischio)
+    if (player.y > WORLD_HEIGHT + 100) {
+      endLose();
+      return;
+    }
+
+    // Nemici
+    for (const e of enemies) {
+      e.x += e.speed * e.dir;
+      if (e.x < e.minX) { e.x = e.minX; e.dir = 1; }
+      if (e.x > e.maxX) { e.x = e.maxX; e.dir = -1; }
+      if (rectsOverlap(player, e)) {
+        endLose();
+        return;
+      }
+    }
+
+    // Cristalli
+    for (const c of crystals) {
+      if (!c.taken && rectsOverlap(player, c)) {
+        c.taken = true;
+        crystalsCollected++;
+        updateHud();
+      }
+    }
+
+    // Obiettivo raggiunto
+    if (player.y <= goalY + 22 && player.x + player.w > 160 && player.x < 360) {
+      endWin();
+      return;
+    }
+
+    // Camera: segue il giocatore verticalmente
+    const targetCamY = player.y - H*0.55;
+    camY += (targetCamY - camY) * 0.15;
+    if (camY < 0) camY = 0;
+    if (camY > WORLD_HEIGHT - H) camY = WORLD_HEIGHT - H;
+
+    if (Math.floor(timeLeft*2) % 2 === 0) updateHud();
+
+    draw();
+    requestAnimationFrame(loop);
+  }
+
+  function draw(){
+    ctx.clearRect(0,0,W,H);
+
+    // Sfondo: travi decorative della torre
+    ctx.save();
+    ctx.translate(0, -camY);
+
+    // Linee guida verticali (travi)
+    ctx.strokeStyle = 'rgba(201,133,42,0.12)';
+    ctx.lineWidth = 2;
+    for (let gx = 40; gx < 520; gx += 90) {
+      ctx.beginPath();
+      ctx.moveTo(gx, 0);
+      ctx.lineTo(gx, WORLD_HEIGHT);
+      ctx.stroke();
+    }
+    // Ingranaggi decorativi di sfondo
+    ctx.strokeStyle = 'rgba(58,143,138,0.10)';
+    for (let gy = 200; gy < WORLD_HEIGHT; gy += 420) {
+      ctx.beginPath();
+      ctx.arc(80 + (gy%2===0?0:360), gy, 46, 0, Math.PI*2);
+      ctx.stroke();
+    }
+
+    // Piattaforme
+    for (const p of platforms) {
+      if (p.y + p.h < camY - 20 || p.y > camY + H + 20) continue;
+      if (p.kind === 'goal') {
+        ctx.fillStyle = '#3a8f8a';
+        ctx.fillRect(p.x, p.y, p.w, p.h);
+        ctx.fillStyle = '#e8b869';
+        ctx.font = '11px Georgia';
+        ctx.textAlign = 'center';
+        ctx.fillText('GRANDE INGRANAGGIO', p.x + p.w/2, p.y - 10);
+      } else if (p.kind === 'floor') {
+        ctx.fillStyle = '#2a2140';
+        ctx.fillRect(p.x, p.y, p.w, p.h);
+      } else {
+        ctx.fillStyle = '#c9852a';
+        ctx.fillRect(p.x, p.y, p.w, p.h);
+        ctx.fillStyle = 'rgba(0,0,0,0.25)';
+        ctx.fillRect(p.x, p.y+p.h-4, p.w, 4);
+      }
+    }
+
+    // Cristalli
+    for (const c of crystals) {
+      if (c.taken) continue;
+      if (c.y < camY - 20 || c.y > camY + H + 20) continue;
+      ctx.save();
+      ctx.translate(c.x + c.w/2, c.y + c.h/2);
+      ctx.rotate(Math.PI/4);
+      ctx.fillStyle = '#3a8f8a';
+      ctx.shadowColor = '#3a8f8a';
+      ctx.shadowBlur = 10;
+      ctx.fillRect(-c.w/2, -c.h/2, c.w, c.h);
+      ctx.restore();
+    }
+
+    // Nemici (Spiriti di Ruggine)
+    for (const e of enemies) {
+      if (e.y < camY - 20 || e.y > camY + H + 20) continue;
+      ctx.fillStyle = '#a4462e';
+      ctx.beginPath();
+      ctx.arc(e.x + e.w/2, e.y + e.h/2, e.w/2, 0, Math.PI*2);
+      ctx.fill();
+      ctx.fillStyle = 'rgba(0,0,0,.4)';
+      ctx.beginPath();
+      ctx.arc(e.x + e.w/2 + e.dir*3, e.y + e.h/2 - 2, 2, 0, Math.PI*2);
+      ctx.fill();
+    }
+
+    // Giocatore (Bit)
+    ctx.save();
+    ctx.translate(player.x + player.w/2, player.y + player.h/2);
+    ctx.scale(player.facing, 1);
+    ctx.fillStyle = '#e8b869';
+    ctx.fillRect(-player.w/2, -player.h/2, player.w, player.h);
+    ctx.fillStyle = '#171225';
+    ctx.fillRect(player.w/2 - 12, -6, 5, 5); // occhio
+    ctx.restore();
+
+    ctx.restore();
+  }
+
+  // --- Input tastiera ---
+  window.addEventListener('keydown', e => {
+    if (e.code === 'ArrowLeft' || e.code === 'KeyA') keys.left = true;
+    if (e.code === 'ArrowRight' || e.code === 'KeyD') keys.right = true;
+    if (e.code === 'Space' || e.code === 'ArrowUp' || e.code === 'KeyW') { keys.jump = true; e.preventDefault(); }
+  });
+  window.addEventListener('keyup', e => {
+    if (e.code === 'ArrowLeft' || e.code === 'KeyA') keys.left = false;
+    if (e.code === 'ArrowRight' || e.code === 'KeyD') keys.right = false;
+    if (e.code === 'Space' || e.code === 'ArrowUp' || e.code === 'KeyW') keys.jump = false;
+  });
+
+  // --- Input touch ---
+  function bindHold(el, onDown, onUp){
+    el.addEventListener('touchstart', e => { e.preventDefault(); onDown(); }, {passive:false});
+    el.addEventListener('touchend', e => { e.preventDefault(); onUp(); }, {passive:false});
+    el.addEventListener('mousedown', onDown);
+    el.addEventListener('mouseup', onUp);
+    el.addEventListener('mouseleave', onUp);
+  }
+  bindHold(document.getElementById('leftBtn'), ()=>keys.left=true, ()=>keys.left=false);
+  bindHold(document.getElementById('rightBtn'), ()=>keys.right=true, ()=>keys.right=false);
+  bindHold(document.getElementById('jumpBtn'), ()=>keys.jump=true, ()=>keys.jump=false);
+
+  // --- Navigazione schermate ---
+  document.getElementById('btnStart').addEventListener('click', () => showPanel('panelGoal'));
+  document.getElementById('btnPlay').addEventListener('click', () => { showPanel(null); startGame(); });
+  document.getElementById('btnAgain').addEventListener('click', () => { showPanel(null); startGame(); });
+  document.getElementById('btnRetry').addEventListener('click', () => { showPanel(null); startGame(); });
+
+  resize();
+  showPanel('panelIntro');
+})();
+</script>
+</body>
+</html>
